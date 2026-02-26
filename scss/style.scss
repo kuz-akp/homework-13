@@ -1,0 +1,24 @@
+@use "animation";
+.container {
+  max-width: 900px;
+  background-color: rgb(196, 239, 225);
+  padding: calc(50% - 450px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.element {
+  justify-items: center;
+  align-items: center;
+  &__colored {
+    justify-items: center;
+    align-items: center;
+    color: blueviolet;
+  }
+  &__animated {
+    justify-items: center;
+    align-items: center;
+    color: darkblue;
+  }
+}

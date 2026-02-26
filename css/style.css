@@ -1,0 +1,104 @@
+.element__animated--square {
+  animation: square 5s infinite;
+}
+
+@keyframes square {
+  0% {
+    fill: black;
+    stroke: white;
+  }
+  25% {
+    fill: grey;
+    stroke: grey;
+  }
+  50% {
+    fill: white;
+    stroke: black;
+  }
+  75% {
+    fill: grey;
+    stroke: grey;
+  }
+  100% {
+    fill: black;
+    stroke: white;
+  }
+}
+.element__animated--rectangle {
+  animation: rectangle 5s infinite;
+}
+.element__animated--rectangle:hover {
+  fill: green;
+  stroke: rgb(8, 45, 8);
+}
+
+.element__animated--circle {
+  animation: circle 16s infinite;
+}
+
+@keyframes circle {
+  0% {
+    fill: green;
+    animation-duration: 5s;
+  }
+  25% {
+    fill: yellow;
+    animation-duration: 0.5s;
+  }
+  50% {
+    fill: red;
+    animation-duration: 5s;
+  }
+  75% {
+    fill: yellow;
+    animation-duration: 0.5s;
+  }
+  100% {
+    fill: green;
+    animation-duration: 5s;
+  }
+}
+.element__animated--ellipse {
+  animation: ellipse 0.5s infinite;
+}
+
+@keyframes ellipse {
+  0% {
+    fill: yellow;
+    stroke: green;
+  }
+  50% {
+    fill: red;
+    stroke: yellow;
+  }
+  100% {
+    fill: yellow;
+    stroke: green;
+  }
+}
+.container {
+  max-width: 900px;
+  background-color: rgb(196, 239, 225);
+  padding: calc(50% - 450px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.element {
+  justify-items: center;
+  align-items: center;
+}
+.element__colored {
+  justify-items: center;
+  align-items: center;
+  color: blueviolet;
+}
+.element__animated {
+  justify-items: center;
+  align-items: center;
+  color: darkblue;
+}
+
+/*# sourceMappingURL=style.css.map */
